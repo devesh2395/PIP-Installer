@@ -1,0 +1,18 @@
+import os
+import tkinter as AMG
+
+Mercedes = AMG.Tk()
+
+GT63s = AMG.Canvas(Mercedes, width = 300, height = 350, bg = 'yellow', relief = 'raised')
+GT63s.pack()
+
+V8_BiTurbo = AMG.Label(Mercedes, text='Upgrade PIP', bg = 'yellow')
+V8_BiTurbo.config(font=('helvetica', 20))
+GT63s.create_window(150, 80, window=V8_BiTurbo)
+
+def DeveshOP ():
+    os.system('start cmd /k python.exe -m pip install --upgrade pip') 
+    
+hp_639 = AMG.Button(text='      CLICK HERE     ', command=DeveshOP, bg='green', fg='white', font=('helvetica', 19, 'bold'))
+GT63s.create_window(150, 180, window=hp_639)
+Mercedes.mainloop()
